@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thyroid Test Report</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Include jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Include Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Custom styles for this template -->
+   
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div style="text-align: center; margin-top: 0; padding-top: 0;">
+                <h1>Thyroid Test Report</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Patient Details</h3>
+                <p>Patient Name: John Doe</p>
+                <p>Patient Age: {age}</p>
+                <p>Patient Gender: Male</p>
+                <p>Patient ID: 12345</p>
+            </div>
+            <div class="col-md-6">
+                <h3>Thyroid Test Results</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Test Name</th>
+                            <th>Result</th>
+                            <th>Normal Range</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>TSH</td>
+                            <td>{TSH} mIU/L</td>
+                            <td>0.4 - 4.0 mIU/L</td>
+                        </tr>
+                        <tr>
+                            <td>Free T4</td>
+                            <td>{T4U} ng/dL</td>
+                            <td>0.8 - 1.8 ng/dL</td>
+                        </tr>
+                        <tr>
+                            <td>Free T3</td>
+                            <td>{T3} pg/mL</td>
+                            <td>2.0 - 4.4 pg/mL</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+              <h4>Results Interpretation:</h4>
+              <p>The patient's TSH, Free T4, and Free T3 levels are{range}within the normal range, indicating {result}.</p>
+          </div>
+      </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4>FAQ</h4>
+                <div class="panel-group " id="accordion">
+                    <div class="panel panel-default ">
+                        <div class="panel-heading  " >
+                            <h4 class="panel-title ">
+                                <a data-toggle="collapse" class=""  data-parent="#accordion" href="#collapse1">
+                                What is TSH?</a>
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse show">
+                            <div class="panel-body">TSH stands for Thyroid Stimulating Hormone. It is a hormone produced by the pituitary gland that regulates the thyroid gland's production of thyroid hormones T3 and T4. </div>
+                        </div>
+                   
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                What is Free T4?</a>
+                            </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse show">
+                            <div class="panel-body">Free T4 is a blood test that measures the level of free thyroxine (T4) in the bloodstream. T4 is one of the hormones produced by the thyroid gland that helps regulate the body's metabolism.</div>
+                        </div>
+                    </div>
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+                                What is Free T3?</a>
+                            </h4>
+                        </div>
+                        <div id="collapse5" class="panel-collapse collapse show">
+                            <div class="panel-body">Free T3 is a blood test that measures the level of free triiodothyronine (T3) in the bloodstream. T3 is one of the hormones produced by the thyroid gland that helps regulate the body's metabolism.</div>
+                        </div>
+                    </div>
+                    
+            </div>
+        </div>
+    </div>
+</body>
+</html>
